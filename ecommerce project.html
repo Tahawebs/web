@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Ecommerce Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 150vh;
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: darken;
+        }
+
+        nav {
+            background-color: #000000;
+            overflow: hidden;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+            margin-left: 20px;
+            transition: 0.5s;
+        }
+
+        .logo:hover {
+            transform: scale(1.3);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            transition: color 0.3s;
+            justify-content: center;
+            transition: 0.5s;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: rgb(244, 165, 165);
+        }
+
+        nav a::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            background-color: rgb(15, 247, 255);
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img src="https://yt3.googleusercontent.com/cT40lDWqE99Ch52R3ftuAExjmjF-yZiY5rUSv_0Q3NXhcqzmiax8ReXuS4Qe53Fizcaw4hEX=s900-c-k-c0x00ffffff-no-rj"
+            alt="Logo" class="logo">
+        <div class="navop">
+            <a class="op" href="#">Home</a>
+            <a class="op" href="#">Products</a>
+            <a class="op" href="#">Cart</a>
+            <a class="op" href="#">Contact</a>
+        </div>
+    </nav>
+
+    <footer>
+        &copy; 2023 Your Ecommerce Store. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
